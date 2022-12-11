@@ -19,9 +19,18 @@ Write a general program to find the time for any galaxy and use the given values
 as a test case.*
 <hr/>
 
+*The code.py file contains code for the given problem statement*
+
+*The code&result file contains code and results for the given test data*
+
+
 ### Install required packages using:
 
 !pip install astropy
+
+
+
+
 
 ### Notes
 
