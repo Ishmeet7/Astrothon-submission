@@ -13,12 +13,12 @@ from astropy.cosmology import WMAP9 as cosmo
 from astropy import units as u
 
 #taking value of scale factor as input
-a=float(input("Enter the value of scale factor:"))  
+scale_factor=float(input("Enter the value of scale factor:"))  
 
 #calculation of redshift,z
-z=(1/a)-1
+z=(1/scale_factor)-1
 #taking distance of galaxy from planet as input
-d=float(input("Enter distance of galaxy from planet:"))   #enter distance in million years i.e.if distance is 5 million light years enter just 5
+dist=float(input("Enter distance of galaxy from planet:"))   #enter distance in million years i.e.if distance is 5 million light years enter just 5
 
 #h0=hubble's constant
 #calculating hubble's constant
@@ -30,10 +30,10 @@ age=cosmo.age(z)
 
 #size=size of universe
 taking size of universe as input
-size=float(input("Enter size of the universe observer is in:"))  #if distance is 5 million light years enter just 5
+size_univ=float(input("Enter size of the universe observer is in:"))  #if distance is 5 million light years enter just 5
 
 #calculating distance upto which galaxy can be seen
-distance=size-d
+distance=size_univ-dist
 
 #calculating rs=speed of recession of galaxy        
 rs=d*h0
@@ -47,7 +47,6 @@ t=(distance*y)/rs
 print("Time period(in seconds) to know  about a galaxy is: "+ str(t))
 
 #conversion of units
-from astropy import units as u
 x = 1.0 * u.megaparsec
 y=x.to(u.km)
 print(y)
