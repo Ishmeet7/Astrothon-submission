@@ -1,6 +1,4 @@
 
-## This repository contains submission for the intra-college astronomy hackathon.
----
 ### Problem Statement
 
 
