@@ -29,14 +29,14 @@ h0=cosmo.H(z)
 age=cosmo.age(z)  
 
 #size=size of universe
-taking size of universe as input
+#taking size of universe as input
 size_univ=float(input("Enter size of the universe observer is in:"))  #if distance is 5 million light years enter just 5
 
 #calculating distance upto which galaxy can be seen
 distance=size_univ-dist
 
 #calculating rs=speed of recession of galaxy        
-rs=d*h0
+rs=dist*h0
 
 #conversion of megaparsec to km
 x = 1.0 * u.megaparsec
